@@ -1,0 +1,48 @@
+package com.icinfo.tax.biz.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Table(name = "TA_ENT_MAINTAIN")
+public class TaEntMaintain implements Serializable{
+
+	private static final long serialVersionUID = -6453819922525492955L;
+	/**
+     * 主键
+     */
+    @Id
+    @Column(name = "ID")
+	private String id;
+    @Column(name = "NSRSBH")
+	private String nsrsbh;
+	@Column(name="ENT_NAME")
+	private String entName;
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getNsrsbh() {
+		return nsrsbh;
+	}
+	public void setNsrsbh(String nsrsbh) {
+		this.nsrsbh = nsrsbh;
+	}
+	public String getEntName() {
+		return entName;
+	}
+	public void setEntName(String entName) {
+		this.entName = entName;
+	}
+	
+	
+}

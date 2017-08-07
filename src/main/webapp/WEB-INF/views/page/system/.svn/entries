@@ -1,0 +1,40 @@
+10
+
+dir
+64452
+svn://192.168.1.251/corpsys/tax/trunk/src/main/webapp/WEB-INF/views/page/system
+svn://192.168.1.251/corpsys
+
+
+
+2017-04-24T05:49:46.340654Z
+61821
+fanzhen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e3ecac7f-d6ac-480a-92ef-e4753dbbc3c3
+
+select
+dir
+
+sysrole
+dir
+
+syspermision
+dir
+
+sysuser
+dir
+

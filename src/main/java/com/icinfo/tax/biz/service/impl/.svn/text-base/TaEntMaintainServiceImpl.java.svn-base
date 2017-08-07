@@ -1,0 +1,23 @@
+package com.icinfo.tax.biz.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.icinfo.framework.core.service.support.MyBatisServiceSupport;
+import com.icinfo.tax.biz.mapper.TaEntMaintainMapper;
+import com.icinfo.tax.biz.model.TaEntMaintain;
+import com.icinfo.tax.biz.service.ITaEntMaintainService;
+import com.icinfo.tax.support.UUIDUtils;
+@Service
+public class TaEntMaintainServiceImpl extends MyBatisServiceSupport implements ITaEntMaintainService{
+
+	@Autowired
+	TaEntMaintainMapper taEntMaintainMapper;
+	
+	@Override
+	public int insert(TaEntMaintain taEntMaintain) throws Exception {
+		taEntMaintain.setId(UUIDUtils.randomUUID());
+		return taEntMaintainMapper.insertSelective(taEntMaintain);
+	}
+
+}

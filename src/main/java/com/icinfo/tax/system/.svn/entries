@@ -1,0 +1,46 @@
+10
+
+dir
+64452
+svn://192.168.1.251/corpsys/tax/trunk/src/main/java/com/icinfo/tax/system
+svn://192.168.1.251/corpsys
+
+
+
+2017-05-16T09:24:51.760951Z
+63393
+zhuyong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e3ecac7f-d6ac-480a-92ef-e4753dbbc3c3
+
+model
+dir
+
+service
+dir
+
+controller
+dir
+
+mapper
+dir
+
+dto
+dir
+
+quartz
+dir
+
